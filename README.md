@@ -1,16 +1,16 @@
-# 🧠 Smart Note Simplifier & Formula Extractor
+#  Smart Note Simplifier & Formula Extractor
 
 This GenAI-powered web app helps students simplify complex academic notes, extract mathematical formulas, and identify key concepts — all in one place.
 
-## ✨ Features
+## Features
 
-- 📤 Upload `.pdf` or `.txt` files (lecture notes, textbooks, etc.)
-- 📌 Extracts **important keywords** using NLP
-- 🧮 Identifies and highlights **mathematical formulas**
-- 📚 Summarizes content into **short, clean bullet points**
-- 🧒 Optional **"Kid Mode"** to simplify text into beginner-level English
+-  Upload `.pdf` or `.txt` files (lecture notes, textbooks, etc.)
+-  Extracts **important keywords** using NLP
+-  Identifies and highlights **mathematical formulas**
+-  Summarizes content into **short, clean bullet points**
+-  Optional **"Kid Mode"** to simplify text into beginner-level English
 
-## 🚀 Demo Flow
+##  Demo Flow
 
 1. Upload a PDF or text note  
 2. App will:
