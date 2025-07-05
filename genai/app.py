@@ -11,6 +11,19 @@ st.caption("Upload your study notes, and get simplified summaries, keywords, and
 
 uploaded_file = st.file_uploader("📄 Upload a PDF or TXT file", type=["pdf", "txt"])
 kid_mode = st.checkbox("🧒 Simplify explanations to kid-level vocabulary")
+from utils.sentiment import classify_sentiment
+
+st.header("🧾 Sentiment Classifier")
+user_review = st.text_area("Enter any paragraph or review you'd like to classify:")
+
+if st.button("Classify Sentiment"):
+    if user_review.strip() == "":
+        st.warning("Please enter a review to classify.")
+    else:
+        with st.spinner("Analyzing..."):
+            sentiment = classify_sentiment(user_review)
+            st.success(f"🧠 Sentiment Detected: {sentiment}")
+
 
 if uploaded_file:
     with st.spinner("Processing your notes..."):
